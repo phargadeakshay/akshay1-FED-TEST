@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.main {
+  padding: 100px;
+}
+
+.accordion {
+  width: 50%;
+  background-color: #8fb7a5;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid white;
+  outline: none;
+  transition: 0.4s;
+  font: 20px Lato, sans-serif;
+}
+
+.active,
+.accordion:hover {
+  background-color: #527e6a;
+}
+
+p {
+  font: 16px Lato, sans-serif;
+}
+
+.accordion:after {
+  font-size: 15px;
+  float: right;
+  margin-left: 5px;
+}
+
+.panel {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
